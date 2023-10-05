@@ -20,8 +20,14 @@ function generateColor() {
     var g = Math.floor(Math.random() * 256);
     var b = Math.floor(Math.random() * 256);
     var randomBG = "rgb(" + r + "," + g + "," + b + ")";
-    document.body.style.background = randomBG;
+    var r1 = Math.floor(Math.random() * 256);
+    var g1 = Math.floor(Math.random() * 256);
+    var b1 = Math.floor(Math.random() * 256);
+    var randomBG1 = "rgb(" + r1 + "," + g1 + "," + b1 + ")";
+console.log(randomBG, randomBG1);
+    body.style.background = "linear-gradient(to right, "+ randomBG + ", " + randomBG1;    
     css.textContent = "RandomColorCode: " + body.style.background;
+  }
 
     // oude code = geen variable
     // let red, green, blue;
@@ -31,7 +37,7 @@ function generateColor() {
   
     // let color = `rgb(${red}, ${green}, ${blue})`;
     // console.log(color);
-  }
+
   
 
 buttonR.addEventListener("click", generateColor);
